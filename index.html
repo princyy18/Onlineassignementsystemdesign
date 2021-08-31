@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Assignment System</title>
+    
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/model.css">
+
+    <!-- font-awesome[font] -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Rajdhani:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="top-header">
+          <div class="top-nav-header">
+            <div class="top-nav-header__logo">
+              <img src="images/logo.png" alt="System Logo" />
+            </div>
+            <div class="top-nav-header__links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a id="open-popup-Student" href="#">Student</a></li>
+                <li><a id="open-popup-Teacher" href="#">Teacher</a></li>
+                <li><a id="open-popup-Admin" href="#">Admin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main">
+          <div class="header-main__info">
+            <h1>Use the Power of Internet</h1>
+            <h4>
+              Best way to upload and check your assignment through internet
+            </h4>
+          </div>
+          <div class="header-main__logo">
+            <img src="images/5836.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Admin Sign in form -->
+  <section>
+    <form action="#">
+      <div id="popup-modal" class="modal"> 
+        <div class="modal-content">
+        
+        <div class="modal-upperside">
+        <a class="modal-close">×</a>
+        <h1>Administrator Login</h1>
+        <hr>
+        </div>
+        
+        <div class="modal-text">
+          <label for="uname">Username</label><br />
+          <input
+          type="text"
+          placeholder="Enter Username"
+          name="uname"
+          required
+        />
+  
+        <label for="psw">Password</label><br />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        </div>
+        <div class="modal-footer">
+          <h5><a href="#">Forgott Password ?</a></h5>
+          <input type="submit" class="modal-submit-btn" value="Login"/>
+        </div>
+  </div>
+  </form>
+</section> 
+  
+<!-- teacher sign in -->
+<section>
+ <form action="#">
+  <div id="popup-modal-Tsign" class="modal-Tsign"> 
+    <div class="modal-Tsign-content">
+    
+    <div class="modal-Tsign-upperside">
+    <a class="modal-Tsign-closeT">×</a>
+    <h1>Teacher Login</h1>
+    <hr>
+    </div>
+    
+    <div class="modal-Tsign-text">
+      <label for="uname">Employee ID</label><br />
+      <input
+      type="number"
+      placeholder="Enter Employee ID"
+      name="uname"
+      required
+    />
+
+    <label for="psw">Password</label><br />
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="psw"
+      required
+    />
+    </div>
+
+    <div class="modal-Tsign-footer">
+      <h5><a href="#">Forgott Password ?</a></h5>
+      <input type="submit" class="modal-submit-btn" value="Login"/>
+    </div>
+</div>
+</form>
+</section>
+
+
+<!--Student Sign up form -->
+ <section>
+  <form action="#">
+   <div id="popup-modal-SUsign" class="modal-SUsign"> 
+     <div class="modal-SUsign-content">
+     
+     <div class="modal-SUsign-upperside">
+     <a class="modal-SUsign-closeSU">×</a>
+     <h1>Student Registration</h1>
+     <hr>
+     </div>
+     
+     <div class="modal-SUsign-text">
+       <label for="uname">Name</label><br />
+       <input
+       type="text"
+       placeholder="Enter your Name"
+       name="uname"
+       required
+     />
+      
+     <label for="enroll">Enrollment No</label><br />
+       <input
+       type="number"
+       placeholder="Enter your Enrollment No."
+       name="enroll" maxlength="12"
+       required
+     />
+
+     <label for="mobile">Mobile No</label><br />
+       <input
+       type="number"
+       placeholder="Enter your Mobile No."
+       name="mobile"
+       required
+     />
+      
+     <label for="email">Email</label><br />
+       <input
+       type="email"
+       placeholder="Enter your Email"
+       name="email"
+       required
+     />
+     
+     <label for="course">Course</label>
+     <select id="course" name="course">
+       <option disabled selected value> -- Select course -- </option>
+       <option value="cse">Computer Science</option>
+       <option value="it">IT Technology</option>
+     </select>
+
+     <label for="psw">Password</label><br />
+     <input
+       type="password"
+       placeholder="Enter Password"
+       name="psw"
+       required
+     />
+     </div>
+ 
+     <div class="modal-SUsign-footer">
+       <input type="submit" class="modal-submit-btn" value="Sign Up"/>
+       <h5>Already have account ?<a id="open"  href="#">Sign In</a></h5>
+     </div>
+ </div>
+ </form>
+ </section>
+ 
+
+ <!--Student Sign In form -->
+<section>
+  <form action="#">
+   <div id="popup-modal-SIsign" class="modal-SIsign"> 
+     <div class="modal-SIsign-content">
+     
+     <div class="modal-SIsign-upperside">
+     <a class="modal-SIsign-closeSI">×</a>
+     <h1>Student Login</h1>
+     <hr>
+     </div>
+     <div class="modal-SUsign-text">
+     <label for="enroll">Enrollment No</label><br />
+       <input
+       type="number"
+       placeholder="Enter your Enrollment No."
+       name="enroll"
+       required
+     />
+
+     <label for="course">Course</label>
+     <select id="course" name="course">
+       <option disabled selected value> -- Select course -- </option>
+       <option value="cse">Computer Science</option>
+       <option value="it">IT Technology</option>
+     </select>
+
+     <label for="psw">Password</label><br />
+     <input
+       type="password"
+       placeholder="Enter Password"
+       name="psw"
+       required
+     />
+     </div>
+ 
+     <div class="modal-SIsign-footer">
+       <input type="submit" class="modal-submit-btn" value="Login"/>
+       <h5 >havn't account ?<a id="open-popup-Student-SignUp" href="#">Sign Up</a></h5>
+     </div>
+ </div>
+ </form>
+ </section>
+  <section class="center-section">
+    <h1 class="h1edit">Catered to Everyone's needs</h1>
+    <div class="boxes">
+      
+      <div class="box1 grow">
+        <h2>Students</h2>
+        <h4>Check guidelines, rubrics, outcomes expectations with viewing remarks and comments on each assignment from staff.</h4>
+      </div>
+      <div class="box2">
+        <h2>Faculty / Staff</h2>
+        <h4>
+          Automatic mark calculations and graphs generation of attainment vs threshold.
+        </h4>
+      </div>
+      <div class="box3">
+        <h2>Management</h2>
+        <h4>
+          Able to have an eagle's view on both faculty and students and ensuring guidelines are met to standards.
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="center-section">
+    <h1 class="h1edit">Know More and Connect</h1>
+    <div class="profile">
+      <div class="profile__one">
+        <img src="images/myphoto.png" alt="">
+        <div class="profile__one_e">
+        <h1>Princy Anghan</h1>
+        <h3>Web Developer at MBIT</h3>
+        <h4>" Persistence and experimenting comined leads to innovation ".</h4>
+        <a href="https://twitter.com/princy_anghan" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/princy-anghan" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/princyy18" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+      </div>
+  </div>
+  </section>
+  <footer class="footerlink">
+      <div class="footerlink_details">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Sitemap</a>
+      <h3>Copyright © 2021. Creatrix Campus. All rights reserved.</h3>
+    </div>
+  </footer>
+
+  <script src="scripts/model.js"></script>
+  </body>
+</html>

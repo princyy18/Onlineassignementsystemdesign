@@ -1,0 +1,336 @@
+@mixin Model {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  margin: auto;
+
+  hr {
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+  }
+  &-content {
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 0px solid #fcfcfc;
+    margin: auto;
+    width: 40%;
+    padding: 25px 15px;
+    position: relative;
+    top: 20vh;
+  }
+  &-upperside {
+    text-align: center;
+    color: #969696;
+  }
+}
+@mixin close {
+  font-size: 20px;
+  float: right;
+  font-weight: 700;
+  color: #696868;
+  font-size: 25px;
+  margin-top: -35px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+}
+
+@mixin inputs {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+}
+@mixin emailselect {
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  input[type="email"]:focus,
+  select:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+}
+@mixin submit {
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  h5 {
+    text-align: center;
+  }
+  input[type="submit"] {
+    padding: 14px;
+    font-size: 14px;
+    background-color: rgb(55, 131, 114);
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+.modal {
+  @include Model();
+
+  &-close {
+    @include close();
+  }
+
+  &-text {
+    @include inputs();
+  }
+  &-footer {
+    @include submit();
+    margin-top: -30px;
+  }
+}
+
+.modal-Tsign {
+  @include Model();
+
+  &-closeT {
+    @include close();
+  }
+
+  &-text {
+    @include inputs();
+  }
+  &-footer {
+    @include submit();
+    margin-top: -30px;
+  }
+}
+
+.modal-SUsign {
+  @include Model();
+  &-content {
+    top: 1.5vh;
+  }
+  &-closeSU {
+    @include close();
+  }
+
+  &-text {
+    @include inputs();
+    @include emailselect();
+  }
+  &-footer {
+    @include submit();
+    margin-bottom: -20px;
+  }
+}
+
+.modal-SIsign {
+  @include Model();
+  &-closeSI {
+    @include close();
+  }
+
+  &-text {
+    @include inputs();
+    @include emailselect();
+  }
+  &-footer {
+    @include submit();
+  }
+}
+.h1edit {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+}
+.center-section {
+  margin-top: 70px;
+}
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  box-sizing: border-box;
+  div {
+    width: 35vh;
+    height: 35vh;
+    padding: 35px;
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 25px;
+  }
+  h4 {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  @keyframes shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  .box1 {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 255, 60, 0),
+      rgb(48, 241, 0)
+    );
+    animation: shrink 1.5s linear 0s infinite alternate;
+  }
+
+  .box2 {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(50, 109, 64, 0),
+      rgb(251, 255, 0)
+    );
+    animation: shrink 1.5s linear 0s infinite alternate;
+  }
+  .box3 {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(50, 109, 64, 0),
+      rgb(0, 204, 255)
+    );
+    animation: shrink 1.5s linear 0s infinite alternate;
+  }
+}
+@mixin profile {
+  width: 50%;
+  margin: auto;
+  line-height: 17px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  h3,h4
+  {
+    font-family: 'New Tegomin', serif;
+  }
+  h1 {
+    //font-family: "Montserrat", sans-serif;
+    font-family: 'New Tegomin', serif;
+    font-size: 1.9rem;
+  }
+  img {
+    width: 30%;
+    margin-right: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+    :hover{
+      color: cadetblue;
+    }
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(-5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+.profile {
+  
+  &__one {
+    @include profile();
+    &:hover{
+      animation: shake 1s linear 0.3s infinite;
+    }
+    img {
+      float: left;
+      margin-left: 30px;
+    }
+  }
+  &__two {
+    @include profile();
+    margin-top: 40px;
+    &:hover{
+      animation: shake 1s linear 0.3s infinite;
+    }
+    &_e
+    {
+      float: right;
+      margin-right: 40px;
+    }
+    img {
+      float: right;
+    }
+  }
+}
+
+.footerlink
+{
+  height: 20vh;
+  text-align: center;
+  margin-top: 6%;
+  padding: 6px;
+  color: white;
+  background-color: rgb(55, 131, 114);
+
+  &_details
+  {
+    margin-top: 60px;
+    line-height: 10px;
+    a
+    {
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+
+      &:hover{
+        color:#6ac5cc;
+      }
+    }
+  }
+}

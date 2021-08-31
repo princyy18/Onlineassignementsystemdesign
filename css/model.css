@@ -1,0 +1,617 @@
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.modal hr {
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 0px solid #fcfcfc;
+  margin: auto;
+  width: 40%;
+  padding: 25px 15px;
+  position: relative;
+  top: 20vh;
+}
+
+.modal-upperside {
+  text-align: center;
+  color: #969696;
+}
+
+.modal-close {
+  font-size: 20px;
+  float: right;
+  font-weight: 700;
+  color: #696868;
+  font-size: 25px;
+  margin-top: -35px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+}
+
+.modal-text input::-webkit-outer-spin-button,
+.modal-text input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-text input[type="text"],
+.modal-text input[type="password"],
+.modal-text input[type="number"] {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-text input[type="text"]:focus,
+.modal-text input[type="password"]:focus,
+.modal-text input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-footer {
+  margin-top: -30px;
+}
+
+.modal-footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.modal-footer h5 {
+  text-align: center;
+}
+
+.modal-footer input[type="submit"] {
+  padding: 14px;
+  font-size: 14px;
+  background-color: #378372;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.modal-Tsign {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.modal-Tsign hr {
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.modal-Tsign-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 0px solid #fcfcfc;
+  margin: auto;
+  width: 40%;
+  padding: 25px 15px;
+  position: relative;
+  top: 20vh;
+}
+
+.modal-Tsign-upperside {
+  text-align: center;
+  color: #969696;
+}
+
+.modal-Tsign-closeT {
+  font-size: 20px;
+  float: right;
+  font-weight: 700;
+  color: #696868;
+  font-size: 25px;
+  margin-top: -35px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+}
+
+.modal-Tsign-text input::-webkit-outer-spin-button,
+.modal-Tsign-text input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-Tsign-text input[type="text"],
+.modal-Tsign-text input[type="password"],
+.modal-Tsign-text input[type="number"] {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-Tsign-text input[type="text"]:focus,
+.modal-Tsign-text input[type="password"]:focus,
+.modal-Tsign-text input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-Tsign-footer {
+  margin-top: -30px;
+}
+
+.modal-Tsign-footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.modal-Tsign-footer h5 {
+  text-align: center;
+}
+
+.modal-Tsign-footer input[type="submit"] {
+  padding: 14px;
+  font-size: 14px;
+  background-color: #378372;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.modal-SUsign {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.modal-SUsign hr {
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.modal-SUsign-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 0px solid #fcfcfc;
+  margin: auto;
+  width: 40%;
+  padding: 25px 15px;
+  position: relative;
+  top: 20vh;
+}
+
+.modal-SUsign-upperside {
+  text-align: center;
+  color: #969696;
+}
+
+.modal-SUsign-content {
+  top: 1.5vh;
+}
+
+.modal-SUsign-closeSU {
+  font-size: 20px;
+  float: right;
+  font-weight: 700;
+  color: #696868;
+  font-size: 25px;
+  margin-top: -35px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+}
+
+.modal-SUsign-text input::-webkit-outer-spin-button,
+.modal-SUsign-text input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-SUsign-text input[type="text"],
+.modal-SUsign-text input[type="password"],
+.modal-SUsign-text input[type="number"] {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-SUsign-text input[type="text"]:focus,
+.modal-SUsign-text input[type="password"]:focus,
+.modal-SUsign-text input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-SUsign-text input[type="email"],
+.modal-SUsign-text select {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-SUsign-text input[type="email"]:focus,
+.modal-SUsign-text select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-SUsign-footer {
+  margin-bottom: -20px;
+}
+
+.modal-SUsign-footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.modal-SUsign-footer h5 {
+  text-align: center;
+}
+
+.modal-SUsign-footer input[type="submit"] {
+  padding: 14px;
+  font-size: 14px;
+  background-color: #378372;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.modal-SIsign {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.modal-SIsign hr {
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.modal-SIsign-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 0px solid #fcfcfc;
+  margin: auto;
+  width: 40%;
+  padding: 25px 15px;
+  position: relative;
+  top: 20vh;
+}
+
+.modal-SIsign-upperside {
+  text-align: center;
+  color: #969696;
+}
+
+.modal-SIsign-closeSI {
+  font-size: 20px;
+  float: right;
+  font-weight: 700;
+  color: #696868;
+  font-size: 25px;
+  margin-top: -35px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+}
+
+.modal-SIsign-text input::-webkit-outer-spin-button,
+.modal-SIsign-text input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-SIsign-text input[type="text"],
+.modal-SIsign-text input[type="password"],
+.modal-SIsign-text input[type="number"] {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-SIsign-text input[type="text"]:focus,
+.modal-SIsign-text input[type="password"]:focus,
+.modal-SIsign-text input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-SIsign-text input[type="email"],
+.modal-SIsign-text select {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.modal-SIsign-text input[type="email"]:focus,
+.modal-SIsign-text select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-SIsign-footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.modal-SIsign-footer h5 {
+  text-align: center;
+}
+
+.modal-SIsign-footer input[type="submit"] {
+  padding: 14px;
+  font-size: 14px;
+  background-color: #378372;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.h1edit {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+}
+
+.center-section {
+  margin-top: 70px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.boxes div {
+  width: 35vh;
+  height: 35vh;
+  padding: 35px;
+}
+
+.boxes h2 {
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 25px;
+}
+
+.boxes h4 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.boxes .box1 {
+  background-image: linear-gradient(to bottom, rgba(0, 255, 60, 0), #30f100);
+  animation: shrink 1.5s linear 0s infinite alternate;
+}
+
+.boxes .box2 {
+  background-image: linear-gradient(to bottom, rgba(50, 109, 64, 0), #fbff00);
+  animation: shrink 1.5s linear 0s infinite alternate;
+}
+
+.boxes .box3 {
+  background-image: linear-gradient(to bottom, rgba(50, 109, 64, 0), #00ccff);
+  animation: shrink 1.5s linear 0s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(-5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+.profile__one {
+  width: 50%;
+  margin: auto;
+  line-height: 17px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.profile__one h3, .profile__one h4 {
+  font-family: 'New Tegomin', serif;
+}
+
+.profile__one h1 {
+  font-family: 'New Tegomin', serif;
+  font-size: 1.9rem;
+}
+
+.profile__one img {
+  width: 30%;
+  margin-right: 50px;
+}
+
+.profile__one a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.profile__one a :hover {
+  color: cadetblue;
+}
+
+.profile__one:hover {
+  animation: shake 1s linear 0.3s infinite;
+}
+
+.profile__one img {
+  float: left;
+  margin-left: 30px;
+}
+
+.profile__two {
+  width: 50%;
+  margin: auto;
+  line-height: 17px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.profile__two h3, .profile__two h4 {
+  font-family: 'New Tegomin', serif;
+}
+
+.profile__two h1 {
+  font-family: 'New Tegomin', serif;
+  font-size: 1.9rem;
+}
+
+.profile__two img {
+  width: 30%;
+  margin-right: 50px;
+}
+
+.profile__two a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.profile__two a :hover {
+  color: cadetblue;
+}
+
+.profile__two:hover {
+  animation: shake 1s linear 0.3s infinite;
+}
+
+.profile__two_e {
+  float: right;
+  margin-right: 40px;
+}
+
+.profile__two img {
+  float: right;
+}
+
+.footerlink {
+  height: 20vh;
+  text-align: center;
+  margin-top: 6%;
+  padding: 6px;
+  color: white;
+  background-color: #378372;
+}
+
+.footerlink_details {
+  margin-top: 60px;
+  line-height: 10px;
+}
+
+.footerlink_details a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.footerlink_details a:hover {
+  color: #6ac5cc;
+}
+/*# sourceMappingURL=model.css.map */
